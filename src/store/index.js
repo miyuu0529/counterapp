@@ -7,9 +7,8 @@ export default new Vuex.Store({
   state: {
     count:0
   },
-  
   mutations:{
-  increment: state => state.count++,
+  increment: state => state.count++,//アロー関数//
   decrement: state => state.count--
   },
   actions: {
@@ -17,6 +16,6 @@ export default new Vuex.Store({
   modules: {
   },
   getters: {
-    cont: state => {return state.count}
+    count: state => {return state.count}
   }
 })

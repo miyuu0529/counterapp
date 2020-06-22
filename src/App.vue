@@ -5,7 +5,6 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/count">Count</router-link> |
       <router-link to="/score">Score</router-link>
-      
     </div>
     <router-view/>
   </div>

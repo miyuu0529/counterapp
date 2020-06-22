@@ -1,10 +1,10 @@
 <template>
-  <div class="count">
-  <p>{{count}}</p>
-  <p>{{カウント}}</p>
+  <div class="about">
+    <h1>カウント</h1>
+  <p>{{ count }}</p>
   <p>
-    <button @click="increment">+</button>
-    <button @click="decrement">-</button>
+    <button @click="a">+</button>
+    <button @click="b">-</button>
   </p>
   </div>
 </template>
@@ -17,13 +17,11 @@ export default {
     }
   },
   methods:{
-    increment(){
-      this.$store.commit
-      ('increment')
+    a(){
+      this.$store.commit('increment')
     },
-    decrement(){
-      this.$store.commit
-      ('decrement')
+    b(){
+      this.$store.commit('decrement')
     }
   },
   computed:{
